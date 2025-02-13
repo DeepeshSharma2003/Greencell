@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Chart Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background-color: #007bff;
+            padding: 15px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .chart-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            max-width: 600px;
+            margin: 40px auto;
+        }
+        .chart-button {
+            display: inline-block;
+            padding: 15px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+        .chart-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">Flask Chart Dashboard</div>
+    <div class="chart-container">
+        <a href="/1" class="chart-button">View Chart 1</a>
+        <a href="/2" class="chart-button">View Chart 2</a>
+        <a href="/3" class="chart-button">View Chart 3</a>
+        <a href="/4" class="chart-button">View Chart 4</a>
+        <a href="/5" class="chart-button">View Chart 5</a>
+    </div>
+</body>
+</html>
